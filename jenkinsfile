@@ -9,5 +9,10 @@ pipeline{
              git 'https://github.com/venkat040/myweb.git'
                }
            }
+             stage("build"){
+           steps{
+             sh 'mvn clean package'
+               }
+           }
        }
    }
