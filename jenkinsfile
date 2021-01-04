@@ -1,4 +1,5 @@
-pipeline{
+ currentBuild.displayName="tomcat-server-#"+currentBuild.number
+ pipeline{
   agent any
   environment{
           PATH="/opt/maven/bin:$PATH"
