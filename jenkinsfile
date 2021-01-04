@@ -1,0 +1,13 @@
+piepline{
+  agent any
+  environment{
+     PATH=/opt/maven:$PATH
+     }
+      stages{
+        stage("git checkout"){
+           steps{
+             git 'https://github.com/venkat040/myweb.git'
+               }
+           }
+       }
+   }
